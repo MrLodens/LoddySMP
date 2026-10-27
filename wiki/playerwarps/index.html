@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoddySMP | Playerwarps</title>
+<meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<header class="header" id="home">
+  <div class="topbar">
+    <div class="container">
+      <nav aria-label="Quick menu">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+          <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
+          <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
+        </ul>
+      </nav>
+      <button class="server" id="copyIp" type="button" aria-label="Copy the server IP">
+        <span class="small">Play with <b id="online">0</b> players online</span>
+        <span class="ip">loddysmp.net</span>
+      </button>
+    </div>
+  </div>
+  <div class="logo"><a href="../../"><strong>LoddySMP</strong></a></div>
+</header>
+
+<div class="container store-content">
+  <a class="btn back" href="../"><span aria-hidden="true">←</span> Back to the wiki</a>
+  <div class="wiki-hero"><span class="wiki-icon" aria-hidden="true">🌀</span><img src="../../images/playerwarps.png" alt="" loading="lazy" onerror="this.remove()"></div>
+  <section class="card">
+    <h2>Playerwarps</h2>
+    <p>Playerwarps let you set a public teleport point, for example at your base or shop, so other players can visit it quickly.</p>
+  </section>
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps"><li>Go to the spot where you want your warp.</li><li>Create it with <code>/pw create &lt;name&gt;</code>.</li><li>Players can now visit it with <code>/pw &lt;name&gt;</code>.</li></ol>
+  </section>
+  <section class="card">
+    <h2>Commands</h2>
+    <div class="table-wrap"><table class="cmds"><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><code>/pw</code></td><td>Open the playerwarps menu</td></tr><tr><td><code>/pw &lt;name&gt;</code></td><td>Teleport to a warp</td></tr><tr><td><code>/pw create &lt;name&gt;</code></td><td>Create a warp at your location</td></tr><tr><td><code>/pw delete &lt;name&gt;</code></td><td>Delete one of your warps</td></tr></tbody></table></div>
+  </section>
+  <section class="card">
+    <h2>Tips</h2>
+    <ul><li>Pick a short, clear name so players can find your warp easily.</li><li>Put your warp in a safe, easy to reach spot.</li></ul>
+  </section>
+</div>
+
+<footer>
+  <div class="utils">
+    <div class="container">
+      <div class="brand">LoddySMP</div>
+      <div>
+        <div class="title">About us</div>
+        <p>LoddySMP is a Minecraft SMP for friends, reachable at loddysmp.net.</p>
+      </div>
+      <div>
+        <div class="title">Quick links</div>
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>© <span id="year">2026</span> LoddySMP. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="../../javascript/home.js"></script>
+</body>
+</html>

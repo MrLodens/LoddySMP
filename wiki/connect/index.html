@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoddySMP | AFKing</title>
+<meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<header class="header" id="home">
+  <div class="topbar">
+    <div class="container">
+      <nav aria-label="Quick menu">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+          <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
+          <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
+        </ul>
+      </nav>
+      <button class="server" id="copyIp" type="button" aria-label="Copy the server IP">
+        <span class="small">Play with <b id="online">0</b> players online</span>
+        <span class="ip">loddysmp.net</span>
+      </button>
+    </div>
+  </div>
+  <div class="logo"><a href="../../"><strong>LoddySMP</strong></a></div>
+</header>
+
+<div class="container store-content">
+  <a class="btn back" href="../"><span aria-hidden="true">←</span> Back to the wiki</a>
+  <div class="wiki-hero"><span class="wiki-icon" aria-hidden="true">💤</span><img src="../../images/connect.png" alt="" loading="lazy" onerror="this.remove()"></div>
+  <section class="card">
+    <h2>How to connect</h2>
+    <p>How to connect succesfully to LoddySMP on Java Edition and Bedrock Edition</p>
+  </section>
+  <section class="card">
+    <h2>Java Edition</h2>
+    <ul class="steps">
+      <li>Launch Minecraft</li>
+      <li>Press Multiplayer</li>
+      <li>Click on Add Server</li>
+      <li>Enter the following server information:</li>
+      <ul>
+        <li>Server Name: <code>LoddySMP</code></li>
+        <li>Server Address: <code>loddysmp.net</code></li>
+      </ul>
+      <li>Press Done</li>
+      <li>Press Join Server</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Bedrock Edition</h2>
+    <ul class="steps">
+      <li>Launch Minecraft</li>
+      <li>Press Play</li>
+      <li>Go to Servers</li>
+      <li>Press Add Server</li>
+      <li>Enter the following server information</li>
+      <ul>
+        <li>Server Name: <code>LoddySMP</code></li>
+        <li>Server Address: <code>loddysmp.net</code></li>
+        <li>Port: <code>12000</code></li>
+      </ul>
+      <li>Press Add Server and play</li>
+    </ul>
+    <br>
+    <section class="card">
+      <h2>Bedrock Edition on Console</h2>
+      <p>Joining LoddySMP on console is a bit trickier.</p>
+      <ul class="steps">
+        <li>Install the app called BedrockTogether on your phone</li>
+        <li>Follow the Bedrock steps above</li>
+      </ul>
+    </section>
+  </section>
+  <section class="card">
+    <h2>Tips</h2>
+    <ul>
+      <li>If you're still having any issues, create a ticket in our <a href="https://discord.com/channels/1548627962121691136/1548629539058614272">Discord</a></li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <div class="utils">
+    <div class="container">
+      <div class="brand">LoddySMP</div>
+      <div>
+        <div class="title">About us</div>
+        <p>LoddySMP is a Minecraft SMP for friends, reachable at loddysmp.net.</p>
+      </div>
+      <div>
+        <div class="title">Quick links</div>
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>© <span id="year">2026</span> LoddySMP. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="../../javascript/home.js"></script>
+</body>
+</html>

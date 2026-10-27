@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LoddySMP | Home</title>
+<title>LoddySMP | Wiki</title>
 <meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,8 @@
       <nav aria-label="Quick menu">
         <ul>
           <li><a href="../">Home</a></li>
-          <li><a href="../rules/">Rules</a></li>
-          <li><a href="./">Wiki</a></li>
+          <li><a href="./rules/">Rules</a></li>
+          <li><a href="../wiki/">Wiki</a></li>
           <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
           <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
         </ul>
@@ -29,13 +29,30 @@
       </button>
     </div>
   </div>
-  <div class="logo"><a href="#home"><strong>LoddySMP</strong></a></div>
+  <div class="logo"><a href="../"><strong>LoddySMP</strong></a></div>
 </header>
 
-<main class="container">
-    <h1>Wiki</h1>
-    <p>More content will be added later.</p>
-</main>
+<div class="container store-content">
+  <section class="card">
+    <h2>Wiki</h2>
+    <p>Everything you need to know about the features on LoddySMP. Pick a feature to see how it works and which commands you can use.</p>
+  </section>
+  <div class="wiki-grid">
+    <a class="wiki-card" href="./connect/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🏰</span><img src="../images/connect.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>How to connect</h3><p>How to connect successfully to LoddySMP.</p></div></a>
+    <a class="wiki-card" href="./rules/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🏰</span><img src="../images/rules.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Rules</h3><p>Official LoddySMP Rules.</p></div></a>
+    <a class="wiki-card" href="./lands/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🏰</span><img src="../images/lands.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Lands</h3><p>Claim your area, protect your builds and play together with friends.</p></div></a>
+    <a class="wiki-card" href="./playerwarps/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🌀</span><img src="../images/playerwarps.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Playerwarps</h3><p>Create your own warp and visit the warps of other players.</p></div></a>
+    <a class="wiki-card" href="./chestshops/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🛒</span><img src="../images/chestshops.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Chest Shops</h3><p>Set up a chest shop and trade with other players.</p></div></a>
+    <a class="wiki-card" href="./sleeping/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🛏️</span><img src="../images/sleeping.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Sleeping</h3><p>Skip the night together by going to bed.</p></div></a>
+    <a class="wiki-card" href="./afking/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">💤</span><img src="../images/afking.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Afking</h3><p>Away from your keyboard? Let others know.</p></div></a>
+    <a class="wiki-card" href="./resourceworld/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">⛏️</span><img src="../images/resourceworld.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Resource World</h3><p>A separate world to gather resources without ruining the main world.</p></div></a>
+    <a class="wiki-card" href="./parkour/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🏃</span><img src="../images/parkour.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Parkour</h3><p>Test your skills on the parkour courses.</p></div></a>
+    <a class="wiki-card" href="./mobheads/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">💀</span><img src="../images/mobheads.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Mobheads</h3><p>Collect the heads of mobs.</p></div></a>
+    <a class="wiki-card" href="./mobcatchers/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🥚</span><img src="../images/mobcatchers.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Mobcatchers</h3><p>Catch a mob and take it with you.</p></div></a>
+    <a class="wiki-card" href="./jobs/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">🪵</span><img src="../images/jobs.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>Jobs</h3><p>Get paid for your favourite activities.</p></div></a>
+    <a class="wiki-card" href="./pvp/"><div class="wiki-thumb"><span class="wiki-icon" aria-hidden="true">💀</span><img src="../images/pvp.png" alt="" loading="lazy" onerror="this.remove()"></div><div class="wiki-body"><h3>PvP</h3><p>Fight your rivals in the PvP Arena.</p></div></a>
+  </div>
+</div>
 
 <footer>
   <div class="utils">
@@ -48,8 +65,9 @@
       <div>
         <div class="title">Quick links</div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#information">Information</a></li>
+          <li><a href="../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../wiki/">Wiki</a></li>
         </ul>
       </div>
     </div>
@@ -61,9 +79,8 @@
   </div>
 </footer>
 
-<button class="theme" id="theme" type="button" aria-label="Switch between light and dark theme">Theme</button>
 <div class="toast" id="toast" role="status"></div>
 
-<script src="javascript/home.js"></script>
+<script src="../javascript/home.js"></script>
 </body>
 </html>

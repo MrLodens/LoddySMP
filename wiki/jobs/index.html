@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoddySMP | AFKing</title>
+<meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<header class="header" id="home">
+  <div class="topbar">
+    <div class="container">
+      <nav aria-label="Quick menu">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+          <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
+          <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
+        </ul>
+      </nav>
+      <button class="server" id="copyIp" type="button" aria-label="Copy the server IP">
+        <span class="small">Play with <b id="online">0</b> players online</span>
+        <span class="ip">loddysmp.net</span>
+      </button>
+    </div>
+  </div>
+  <div class="logo"><a href="../../"><strong>LoddySMP</strong></a></div>
+</header>
+
+<div class="container store-content">
+  <a class="btn back" href="../"><span aria-hidden="true">←</span> Back to the wiki</a>
+  <div class="wiki-hero"><span class="wiki-icon" aria-hidden="true">💤</span><img src="../../images/jobs.png" alt="" loading="lazy" onerror="this.remove()"></div>
+  <section class="card">
+    <h2>Jobs</h2>
+    <p>Earn money by doing two of your favourite acitivies.</p>
+  </section>
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Type <code>/jobs browse</code> and pick 2 jobs.</li>
+      <li>Start doing the activities and start earning money.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Commands</h2>
+    <div class="table-wrap">
+      <table class="cmds">
+        <thead>
+          <tr>
+            <th>Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/jobs browse</code></td>
+            <td>Display all available jobs</td>
+          </tr>
+          <tr>
+            <td><code>/jobs join [job]</code></td>
+            <td>Join a job</td>
+          </tr>
+          <tr>
+            <td><code>/jobs info [job]</code></td>
+            <td>Display activity payments</td>
+          </tr>
+          <tr>
+            <td><code>/jobs</code></td>
+            <td>Display all jobs commands</td>
+          </tr>
+          <tr>
+            <td><code>/jobs leave [job]</code></td>
+            <td>Leave a job</td>
+          </tr>
+          <tr>
+            <td><code>/jobs leaveall</code></td>
+            <td>Leave all joined jobs</td>
+          </tr>
+          <tr>
+            <td><code>/jobs stats</code></td>
+            <td>Display your job levels</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="utils">
+    <div class="container">
+      <div class="brand">LoddySMP</div>
+      <div>
+        <div class="title">About us</div>
+        <p>LoddySMP is a Minecraft SMP for friends, reachable at loddysmp.net.</p>
+      </div>
+      <div>
+        <div class="title">Quick links</div>
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>© <span id="year">2026</span> LoddySMP. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="../../javascript/home.js"></script>
+</body>
+</html>

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LoddySMP | Home</title>
+<title>LoddySMP | Mobheads</title>
 <meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
 <header class="header" id="home">
@@ -16,9 +16,9 @@
     <div class="container">
       <nav aria-label="Quick menu">
         <ul>
-          <li><a href="../">Home</a></li>
-          <li><a href="./">Rules</a></li>
-          <li><a href="../wiki/">Wiki</a></li>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
           <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
           <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
         </ul>
@@ -29,13 +29,25 @@
       </button>
     </div>
   </div>
-  <div class="logo"><a href="#home"><strong>LoddySMP</strong></a></div>
+  <div class="logo"><a href="../../"><strong>LoddySMP</strong></a></div>
 </header>
 
-<main class="container">
-    <h1>Rules</h1>
-    <p>More content will be added later</p>
-</main>
+<div class="container store-content">
+  <a class="btn back" href="../"><span aria-hidden="true">←</span> Back to the wiki</a>
+  <div class="wiki-hero"><span class="wiki-icon" aria-hidden="true">💀</span><img src="../../images/mobheads.png" alt="" loading="lazy" onerror="this.remove()"></div>
+  <section class="card">
+    <h2>Mobheads</h2>
+    <p>When you kill a mob there is a small chance it drops its head. Mob heads are great for decorating your builds or for selling in your shop.</p>
+  </section>
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps"><li>Kill a mob.</li><li>Pick up its head if it drops.</li><li>Place it as decoration or sell it.</li></ol>
+  </section>
+  <section class="card">
+    <h2>Tips</h2>
+    <ul><li>Heads are a chance drop, so keep hunting.</li><li>Sell rare heads in a Quickshop.</li></ul>
+  </section>
+</div>
 
 <footer>
   <div class="utils">
@@ -48,8 +60,9 @@
       <div>
         <div class="title">Quick links</div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#information">Information</a></li>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
         </ul>
       </div>
     </div>
@@ -61,9 +74,8 @@
   </div>
 </footer>
 
-<button class="theme" id="theme" type="button" aria-label="Switch between light and dark theme">Theme</button>
 <div class="toast" id="toast" role="status"></div>
 
-<script src="javascript/home.js"></script>
+<script src="../../javascript/home.js"></script>
 </body>
 </html>

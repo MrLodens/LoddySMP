@@ -1,0 +1,3 @@
+Put your player build screenshots here, named build-1.png, build-2.png, ...
+Recommended size: 1600x900 (16:9).
+To add more slides, copy a <figure class="slide"> block in index.html (section "Player builds").

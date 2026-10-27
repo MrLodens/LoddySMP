@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoddySMP | Lands</title>
+<meta name="description" content="LoddySMP, a Minecraft SMP server. Play on loddysmp.net.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<header class="header" id="home">
+  <div class="topbar">
+    <div class="container">
+      <nav aria-label="Quick menu">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+          <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
+          <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
+        </ul>
+      </nav>
+      <button class="server" id="copyIp" type="button" aria-label="Copy the server IP">
+        <span class="small">Play with <b id="online">0</b> players online</span>
+        <span class="ip">loddysmp.net</span>
+      </button>
+    </div>
+  </div>
+  <div class="logo"><a href="../../"><strong>LoddySMP</strong></a></div>
+</header>
+
+<div class="container store-content">
+  <a class="btn back" href="../"><span aria-hidden="true">←</span> Back to the wiki</a>
+  <div class="wiki-hero"><span class="wiki-icon" aria-hidden="true">🏰</span><img src="../../images/lands.png" alt="" loading="lazy" onerror="this.remove()"></div>
+  <section class="card">
+    <h2>Lands</h2>
+    <p>Lands lets you claim chunks to protect your builds from griefing and theft. Several players can join the same land, so you can build together.</p>
+  </section>
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps"><li>Stand in the area you want to protect.</li><li>Create your land with <code>/lands create &lt;name&gt;</code>.</li><li>Claim the chunk you are standing in with <code>/lands claim</code>.</li><li>Invite friends with <code>/lands invite &lt;player&gt;</code>.</li></ol>
+  </section>
+  <section class="card">
+    <h2>Commands</h2>
+    <div class="table-wrap"><table class="cmds"><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><code>/lands create &lt;name&gt;</code></td><td>Create a new land</td></tr><tr><td><code>/lands claim</code></td><td>Claim the chunk you are standing in</td></tr><tr><td><code>/lands unclaim</code></td><td>Release the chunk you are standing in</td></tr><tr><td><code>/lands invite &lt;player&gt;</code></td><td>Invite a player to your land</td></tr><tr><td><code>/lands trust &lt;player&gt;</code></td><td>Give a player access to your land without joining it</td></tr><tr><td><code>/lands untrust &lt;player&gt;</code></td><td>Remove a player from your land</td></tr><tr><td><code>/lands info</code></td><td>Show information about the land you are in</td></tr><tr><td><code>/lands menu</code></td><td>Open the land menu</td></tr><tr><td><code>/lands help</code></td><td>List all available commands</td></tr><tr><td><code>/lands claim auto</code></td><td>Automatically claim chunks while you walk (use <code>/lands unclaim auto</code> to unclaim)</td></tr><tr><td><code>/lands map</code></td><td>Show a map of the claims around you (<code>/lands map chat</code> or <code>/lands map link</code>)</td></tr><tr><td><code>/lands view</code></td><td>Show the borders of nearby claims (<code>/lands view here</code>, <code>/lands view stay</code>, <code>/lands view disable</code>)</td></tr><tr><td><code>/lands delete</code></td><td>Delete the active land</td></tr><tr><td><code>/lands edit</code></td><td>Change between lands</td></tr></tbody></table></div>
+  </section>
+  <section class="card">
+    <h2>Tips</h2>
+    <ul>
+      <li>Use <code>/lands area</code> or the menu to manage roles and settings of your land.</li>
+      <li>Use <code>/lands map</code> to see what is already claimed before you claim.</li>
+      <li>Use <code>/lands edit</code> to claim chunks in another land.</li>
+      <li>Only give trusted players access; they can build in your land.</li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <div class="utils">
+    <div class="container">
+      <div class="brand">LoddySMP</div>
+      <div>
+        <div class="title">About us</div>
+        <p>LoddySMP is a Minecraft SMP for friends, reachable at loddysmp.net.</p>
+      </div>
+      <div>
+        <div class="title">Quick links</div>
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../../wiki/">Wiki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>© <span id="year">2026</span> LoddySMP. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="../../javascript/home.js"></script>
+</body>
+</html>

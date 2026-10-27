@@ -17,7 +17,7 @@
       <nav aria-label="Quick menu">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="./rules/">Rules</a></li>
+          <li><a href="./wiki/rules/">Rules</a></li>
           <li><a href="./wiki/">Wiki</a></li>
           <li><a href="https://discord.loddysmp.net" target="_blank">Discord</a></li>
           <li><a href="https://store.loddysmp.net" target="_blank">Store</a></li>
@@ -35,12 +35,6 @@
 <div class="container store-content">
   <div class="layout">
     <aside>
-      <nav aria-label="Main menu">
-        <ul class="nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#information">Information</a></li>
-        </ul>
-      </nav>
       <div class="card">
         <h2>Server</h2>
         <div class="stat" aria-live="polite">
@@ -48,18 +42,94 @@
           <div><b id="count">…</b><span id="statusText">Fetching status…</span></div>
         </div>
       </div>
+      <div class="card play">
+        <h2>Play now</h2>
+        <p class="ip-box"><code>loddysmp.net</code></p>
+        <p><button class="btn" type="button" data-copy-ip>Copy the IP</button></p>
+        <p class="small-note">Or <a href="https://discord.loddysmp.net" target="_blank">join our Discord</a></p>
+      </div>
     </aside>
 
     <main>
       <section class="card">
         <h2>Welcome to LoddySMP</h2>
-        <p>LoddySMP is a Minecraft SMP for friends. Build your own base, explore the world and survive together with everyone.</p>
-        <p><button class="btn" id="copyIp2" type="button">Copy the server IP</button></p>
+        <p>LoddySMP is a semi-vanilla Minecraft server built around community, progression, and a friendly survival experience.</p>
+        <p>Whether you're looking for a place to build, start your own shop, claim your land, play with friends, or simply enjoy a long-term survival experience, there's something for everyone on LoddySMP.</p>
+        <div class="actions">
+          <button class="btn" id="copyIp2" type="button">Copy the server IP</button>
+          <a class="btn btn-alt" href="https://discord.loddysmp.net" target="_blank">Join our Discord</a>
+        </div>
       </section>
 
       <section class="card" id="information">
-        <h2>Information</h2>
-        <p>More information about LoddySMP</p>
+        <h2>Why LoddySMP?</h2>
+        <div class="highlights">
+          <div><span aria-hidden="true">🌱</span><h3>Semi-vanilla</h3><p>The survival you know, with just enough extras to make it more comfortable.</p></div>
+          <div><span aria-hidden="true">🏡</span><h3>Your own land</h3><p>Claim your builds and invite friends to build with you.</p></div>
+          <div><span aria-hidden="true">💰</span><h3>Player economy</h3><p>Open a shop, trade with others and build your own business.</p></div>
+          <div><span aria-hidden="true">🤝</span><h3>Friendly community</h3><p>Play together, help each other and join the conversation on Discord.</p></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>How to join</h2>
+        <ol class="join-steps">
+          <li><b>Open Minecraft</b><span>Go to Multiplayer and choose Add Server.</span></li>
+          <li><b>Enter the IP</b><span>Fill in <code>loddysmp.net</code> as the server address. Need help? See <a href="./wiki/connect/">How to connect</a>.</span></li>
+          <li><b>Read the rules</b><span>Take a minute to read the <a href="./wiki/rules/">rules</a> so everyone has fun.</span></li>
+          <li><b>Say hi</b><span>Join our <a href="https://discord.loddysmp.net" target="_blank">Discord</a> and meet the community.</span></li>
+        </ol>
+      </section>
+
+      <section class="card showcase" id="builds">
+        <h2>Player builds</h2>
+        <p class="lead">A look at what our players have built on LoddySMP.</p>
+        <!-- Add a build: copy one <figure class="slide"> block below, put the image in images/builds/ and change the src, title and builder. -->
+        <div class="slideshow" data-slideshow role="region" aria-roledescription="carousel" aria-label="Player builds" tabindex="0">
+          <div class="slides">
+        <figure class="slide is-active">
+          <div class="slide-fallback" aria-hidden="true"><span>🏰</span></div>
+          <img src="./images/builds/build-1.png" alt="Build name 1" loading="lazy" onerror="this.remove()">
+          <figcaption><b>Eldewynn</b><span>Built by Gray8911 & community</span></figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="slide-fallback" aria-hidden="true"><span>🏯</span></div>
+          <img src="./images/builds/build-2.png" alt="Build name 2" loading="lazy" onerror="this.remove()">
+          <figcaption><b>Towntopia</b><span>Built by StudiedBuckle38</span></figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="slide-fallback" aria-hidden="true"><span>🌉</span></div>
+          <img src="./images/builds/build-3.png" alt="Build name 3" loading="lazy" onerror="this.remove()">
+          <figcaption><b>LoddySMP Spawn</b><span>Built by MrLodens</span></figcaption>
+        </figure>
+          </div>
+          <button class="slide-btn prev" type="button" aria-label="Previous build">‹</button>
+          <button class="slide-btn next" type="button" aria-label="Next build">›</button>
+          <div class="sdots" role="group" aria-label="Choose a build"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Explore the wiki</h2>
+        <p>Everything you can do on LoddySMP. Click a topic to see how it works and which commands you need.</p>
+        <div class="feature-grid">
+          <a class="feature" href="./wiki/connect/"><span class="feature-icon" aria-hidden="true">🔌</span><span><b>How to connect</b><small>How to connect successfully to LoddySMP.</small></span></a>
+          <a class="feature" href="./wiki/rules/"><span class="feature-icon" aria-hidden="true">📜</span><span><b>Rules</b><small>Official LoddySMP Rules.</small></span></a>
+          <a class="feature" href="./wiki/lands/"><span class="feature-icon" aria-hidden="true">🏰</span><span><b>Lands</b><small>Claim your area, protect your builds and play together with friends.</small></span></a>
+          <a class="feature" href="./wiki/playerwarps/"><span class="feature-icon" aria-hidden="true">🌀</span><span><b>Playerwarps</b><small>Create your own warp and visit the warps of other players.</small></span></a>
+          <a class="feature" href="./wiki/chestshops/"><span class="feature-icon" aria-hidden="true">🛒</span><span><b>Chest Shops</b><small>Set up a chest shop and trade with other players.</small></span></a>
+          <a class="feature" href="./wiki/resourceworld/"><span class="feature-icon" aria-hidden="true">⛏️</span><span><b>Resource World</b><small>A separate world to gather resources without ruining the main world.</small></span></a>
+        </div>
+        <p class="more"><a class="btn" href="./wiki/">Open the wiki</a></p>
+      </section>
+
+      <section class="card">
+        <h2>Join the community</h2>
+        <p>Chat with other players, ask questions, share your builds and stay up to date with news and events on our Discord. Want to support the server? Take a look at the store.</p>
+        <div class="actions">
+          <a class="btn" href="https://discord.loddysmp.net" target="_blank">Discord</a>
+          <a class="btn btn-alt" href="https://store.loddysmp.net" target="_blank">Store</a>
+        </div>
       </section>
     </main>
   </div>
@@ -76,8 +146,9 @@
       <div>
         <div class="title">Quick links</div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#information">Information</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="wiki/rules/">Rules</a></li>
+          <li><a href="wiki/">Wiki</a></li>
         </ul>
       </div>
     </div>
@@ -89,9 +160,9 @@
   </div>
 </footer>
 
-<button class="theme" id="theme" type="button" aria-label="Switch between light and dark theme">Theme</button>
 <div class="toast" id="toast" role="status"></div>
 
 <script src="javascript/home.js"></script>
+<script src="javascript/slideshow.js"></script>
 </body>
 </html>
